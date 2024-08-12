@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Let's check this out.
+    I will be changing the tab title.-->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Weather App</title>
+</head>
+<!--only added that style part to be able to see the stuff. I will fix
+it later in the video where it shows the CSS part.-->
+<body  >
+    <div class="weather-view">
+        <div class="locationButton">
+            <!--Later I will be adding something here
+            to turn it into a clickable button.-->
+            <div class="change-location">
+                <!--Let's go ahead and get that icon.-->
+                <img src="./assets/outline-navigation-location.svg" alt="Location Icon" class="locationIcon">
+                <span class="changeText">Change Location</span>
+            </div>
+        </div>
+        <div class="weatherPart" >
+            <div class="innerWeatherPart">
+                <div class="topWeatherPart">
+                        <div class="date" id="theDate">
+                            Date
+                        </div>
+                        <div class="location">
+                            <img src="./assets/outline-navigation-location.svg" alt="Location Icon">
+                            <span id="">Location</span>
+                        </div>
+                   
+                </div>
+                <div class="bottomWeatherPart">
+                    <span class="temperature"><span id="">High Temp</span> / <span id="tempDegreesL">Low Temp</span> F </span>
+                    <span class="condition" id="">Description</span>
+                    <div class="weatherFeelsPressure">
+                        <div class="weatherFPWords">
+                            <span><b>Feels Like</b></span>
+                            <span class="forecast-bolder-font" id="feels">value</span>
+                            <span><b>Pressure</b></span>
+                            <span class="forecast-bolder-font" id="pressureValue">value</span>
+                        </div>
+                        <div class="weatherFPWords2 spaceHere">
+                            <span><b>Humidity</b></span>
+                            <span class="value forecast-bolder-font" id="">value</span>
+                            <span><b>Wind</b></span>
+                            <span class="value forecast-bolder-font" id="theWind">value</span>
+
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+  
+    <div class="main-content">
+        <section class="intro">
+            <!--Below you can put whatever you want to help your
+            users understand how to search for the weather.-->
+            <!--Title Below-->
+            <h1>Welcom to Weather Demo</h1>
+            <!--Below is the Paragraph.-->
+            <p>Make sure you already have signed up for the free 
+                version of OpenWeather to get you api key.
+                It will be needed to see the weather.
+            </p>
+            <p>There will be an alert that pops up requesting your 
+                API key.
+            </p>
+            <p>Check out my YouTube video called,  <b>'OpenWeather API Key: How To Get The API Key'</b>, 
+                if you need getting you API key.
+            </p>
+
+            <!--Below is how I added the link.-->
+            <p><a href="https://youtu.be/tPlD-CmH7H4" style="color: white;">Video Link</a></p>
+            <p>Hit the "Search Location" button to check out the weather in 
+                your desired city.
+            </p>
+
+        </section>
+    </div>
+    
+</body>
+</html>

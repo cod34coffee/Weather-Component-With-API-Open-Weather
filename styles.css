@@ -1,0 +1,240 @@
+
+/*This below will add style to the entire body.*/
+body{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', 'sans-serif';
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+/*The period before the class name is needed in the CSS file.*/
+.weather-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    background-color: transparent;
+    gap: 30px;
+    color: white;
+
+}
+
+/* This is what the button is inside of*/
+.locationButton{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: -40px;
+    
+}
+
+/*This is the button*/
+.change-location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 398px;
+    height: 50px;
+    background: linear-gradient(90.8deg, rgba(144,217,224, 0.9) 0.2%, rgba(84, 96, 230, 0.9) 100%);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.change-location:hover{
+    background: linear-gradient(90.8deg, rgba(84,96, 230, 0.9)100% rgba(144, 217, 224, 0.9)0.2%);
+}
+
+.change-location img{
+    width: 27px;
+    height: 27px;
+}
+
+
+.weatherPart{
+    width: 100%;
+    margin-left: -40px;
+}
+
+
+.innerWeatherPart{
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    /*This line below will add the background photo. I just need to add it.*/
+    background: url(/assets/boat.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    background-color: black;
+}
+
+.topWeatherPart{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.date{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bottomWeatherPart{
+    align-items: center;
+}
+
+/* Below is how the style will change when the screen is at
+696px. */
+@media (max-width:696px){
+    body{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+    .weather-view{
+        margin-bottom: -50px;
+    }
+}
+
+
+/* Below is how the style will change when the screen is at
+992px to 1129.98px. */
+@media(min-width:992px) and (max-width:1129.98px){
+    body{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .weather-view{
+        width: 526px;
+        height: auto;
+    }
+
+    .change-location{
+        width: 532px;
+        height: 60px;
+        margin-left: 0px;
+    }
+
+    .innerWeatherPart{
+        gap: 140px;
+    }
+}
+
+/* Below is how the style will change when the screen is at
+1130px. */
+@media(min-width:1130px){
+    body{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+    }
+
+    .weather-view{
+        width: 750px;
+        height: 393px;
+        flex-direction: row;
+        align-content: center;
+        position:relative;
+        padding-left: 25px;
+        padding-right: 90px;
+        border-width: 3px;
+        border-color: rgba(90, 90, 153, 0.39);
+        border-style: solid;
+    }
+
+    .weather-view:hover{
+        border-color: rgba(255, 255, 255, 0.315);
+
+    }
+
+    .locationButton{
+        width: 50%;
+        position: relative;
+        float: right;
+        margin-left: -30px;
+        padding-left: 25px;
+    }
+
+    .change-location{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+    }
+
+    .change-location:hover{
+        background: rgb(0, 4, 255);
+    }
+
+    .change-location img{
+        width: 100px;
+        height: 50px;
+    }
+
+    .change-location img :hover{
+        width: 120px;
+        height: 70px;
+    }
+
+    .changeText{
+        display: none;
+    }
+
+    .innerWeatherPart{
+        width: 600px;
+        height: 473px;
+        justify-self: start;
+        gap: 250px;
+        margin-left: 30px;
+        padding-top: 30px;
+    }
+
+    .date{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .location img{
+        width: 22px;
+        margin-left: -1px;
+    }
+
+    .location{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: 550;
+    }
+
+    .bottomWeatherPart{
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .bottomWeatherPart img{
+        width: 70px;
+        height: 60px;
+        margin-left: -5px;
+    }
+}
