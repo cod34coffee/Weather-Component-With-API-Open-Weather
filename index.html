@@ -13,9 +13,12 @@ it later in the video where it shows the CSS part.-->
 <body  >
     <div class="weather-view">
         <div class="locationButton">
-            <!--Later I will be adding something here
-            to turn it into a clickable button.-->
-            <div class="change-location">
+            <!--I am going to add the onclick below, so when the button is 
+            clicked it will trigger the function. The function
+            that will be triggered is called promptForLocation().
+            
+            Let's create it in the index.js file.-->
+            <div class="change-location" onclick="promptForLocation()">
                 <!--Let's go ahead and get that icon.-->
                 <img src="./assets/outline-navigation-location.svg" alt="Location Icon" class="locationIcon">
                 <span class="changeText">Change Location</span>
@@ -29,29 +32,30 @@ it later in the video where it shows the CSS part.-->
                         </div>
                         <div class="location">
                             <img src="./assets/outline-navigation-location.svg" alt="Location Icon">
-                            <span id="">Location</span>
+                            <span id="locationDestination">Location</span>
                         </div>
                    
                 </div>
                 <div class="bottomWeatherPart">
-                    <span class="temperature"><span id="">High Temp</span> / <span id="tempDegreesL">Low Temp</span> F </span>
-                    <span class="condition" id="">Description</span>
+                    <span class="temperature"><span id="highTemp">High Temp</span> / <span id="tempDegreesL">Low Temp</span> F </span>
+                    <span class="condition" id="condition">Description</span>
                     <div class="weatherFeelsPressure">
-                        <div class="weatherFPWords">
+                        <div class="weatherFPWords spaceHere" style="margin-bottom: 10px;">
                             <span><b>Feels Like</b></span>
-                            <span class="forecast-bolder-font" id="feels">value</span>
+                            <span  id="feels">value</span>
                             <span><b>Pressure</b></span>
-                            <span class="forecast-bolder-font" id="pressureValue">value</span>
+                            <span  id="pressureValue">value</span>
                         </div>
-                        <div class="weatherFPWords2 spaceHere">
-                            <span><b>Humidity</b></span>
-                            <span class="value forecast-bolder-font" id="">value</span>
-                            <span><b>Wind</b></span>
-                            <span class="value forecast-bolder-font" id="theWind">value</span>
-
-                        </div>
+                    </div>
+                    <div class="weatherFPWords2 spaceHere" style="margin-bottom: 15px;">
+                        <span><b>Humidity</b></span>
+                        <span><span class="value " id="humidity">value</span> %</span>
+                        <span><b>Wind</b></span>
+                        <span class="value " id="theWind">value</span>
 
                     </div>
+
+                    
                    
                 </div>
             </div>
@@ -65,17 +69,17 @@ it later in the video where it shows the CSS part.-->
             <!--Below you can put whatever you want to help your
             users understand how to search for the weather.-->
             <!--Title Below-->
-            <h1>Welcom to Weather Demo</h1>
+            <h1>Welcome to Weather Demo</h1>
             <!--Below is the Paragraph.-->
             <p>Make sure you already have signed up for the free 
-                version of OpenWeather to get you api key.
+                version of OpenWeather to get your api key.
                 It will be needed to see the weather.
             </p>
             <p>There will be an alert that pops up requesting your 
                 API key.
             </p>
             <p>Check out my YouTube video called,  <b>'OpenWeather API Key: How To Get The API Key'</b>, 
-                if you need getting you API key.
+                if you need help getting you API key.
             </p>
 
             <!--Below is how I added the link.-->
@@ -86,6 +90,6 @@ it later in the video where it shows the CSS part.-->
 
         </section>
     </div>
-    
+    <script src="./index.js"></script>
 </body>
 </html>

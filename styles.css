@@ -100,6 +100,76 @@ body{
     align-items: center;
 }
 
+.temperature{
+    margin-left:0px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.condition{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+.weatherFeelsPressure{
+    margin-top: 15px;
+}
+
+.weatherFPWords{
+    display: flex;
+    gap: 20px;
+    color: white;
+    align-items: center;
+    justify-content: start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.weatherFPWords2{
+    display: flex;
+    gap: 20px;
+    color: white;
+    align-items: center;
+    justify-content: start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.main-content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro{
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.intro h1{
+    font-size: 24px;
+}
+
+.intro p{
+    margin: 10px 0;
+}
+
+
+@media(max-width:596px){
+    .locationButton{
+        width: 385px;
+  
+        
+       
+    }
+    
+}
 /* Below is how the style will change when the screen is at
 696px. */
 @media (max-width:696px){
@@ -112,6 +182,23 @@ body{
     .weather-view{
         margin-bottom: -50px;
     }
+
+    .temperature{
+        margin-left: 0px;
+    }
+
+    .weatherFeelsPressure{
+        margin-top: 15px;
+    }
+
+    .main-content{
+        text-align: center;
+    }
+
+    .change-location{
+        width: 107.5%;
+    }
+    
 }
 
 
@@ -137,6 +224,60 @@ body{
     .innerWeatherPart{
         gap: 140px;
     }
+
+    .weatherFeelsPressure{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .weatherFPWords{
+        display: flex;
+        gap: 20px;
+        color: white;
+        align-items: center;
+        justify-content: start;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .weatherFPWords2{
+        display: flex;
+        gap: 20px;
+        color: white;
+        align-items: center;
+        justify-content: start;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .spaceHere{
+        gap: 50px;
+    }
+
+    .main-content{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro{
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: start;
+    }
+
+    .intro h1{
+        font-size: 24px;
+    }
+
+    .intro p{
+        margin: 10px 0;
+    }
+
+
 }
 
 /* Below is how the style will change when the screen is at
@@ -232,9 +373,65 @@ body{
         align-items: start;
     }
 
-    .bottomWeatherPart img{
-        width: 70px;
-        height: 60px;
-        margin-left: -5px;
+    .temperature{
+        margin-left: 0px;
+        font-size: 35px;
+        font-weight: 700;
     }
+
+    .condition{
+        font-size: 19px;
+    }
+
+
+    .weatherFeelsPressure{
+        display: flex;
+        gap: 20px;
+    }
+
+    .weatherFPWords{
+        display: flex;
+        gap: 20px;
+        color: white;
+        align-items: center;
+        justify-content: start;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+
+    .weatherFPWords2{
+        display: flex;
+        gap: 20px;
+        color: white;
+        align-items: center;
+        justify-content: start;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: -5px;
+    }
+
+    .main-content{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro{
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: start;
+    }
+
+    .intro h1{
+        font-size: 24px;
+    }
+
+    .intro p{
+        margin: 10px 0;
+    }
+  
 }
