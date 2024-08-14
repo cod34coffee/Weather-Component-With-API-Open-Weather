@@ -1,4 +1,6 @@
-//Let's see if this works.
+
+//YouTube Channel: @kaeattatech
+//https://www.youtube.com/@kaeattatech
 
 
 function getWeather(location, apiKey){
@@ -16,9 +18,8 @@ function getWeather(location, apiKey){
         })
         .then(data => {
             const weatherDescription = data.weather[0].description;
-            //The Math.floor is being used to round the temperature number if needed.
-            //This is helpful if you choose to also display the degrees in Celsius.
-            //This is where I am getting my information from on the data.main.temp_min.
+            //The Math.floor could be used to round the temperature number if needed.
+            //It can be helpful if you choose to also display the degrees in Celsius.
             const temperatureMin = data.main.temp_min;
             const temperatureMax = data.main.temp_max;
             const humidity = data.main.humidity;
@@ -56,14 +57,6 @@ function getWeather(location, apiKey){
             pressureTemp.innerHTML = `${newPressure}`;
 
 
-
-
-
-
-
-
-
-            //That worked.
             console.log(`Description: ${weatherDescription}`);
             console.log(`Today's date: ${d}: `);
             console.log(`Weather in ${location}: `);
@@ -81,7 +74,6 @@ function getWeather(location, apiKey){
         })
 }
 
-//Let's test this out. Okay that worked. Now let's finish this up.
 
 //Below is going to be the promptForLocation() function.
 function promptForLocation() {
